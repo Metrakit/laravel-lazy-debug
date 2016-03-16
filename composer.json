@@ -1,5 +1,5 @@
 {
-    "name": "metrakit/lazydebug",
+    "name": "metrakit/laravel-lazy-debug",
     "description": "A Laravel package for a lazy debug",
     "authors": [
         {
