@@ -6,7 +6,5 @@
             "name": "Jordane Jouffroy",
             "email": "contact@jordane.net"
         }
-    ],
-    "minimum-stability": "dev",
-    "require": {}
+    ]
 }
