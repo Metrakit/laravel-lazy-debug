@@ -1,0 +1,12 @@
+{
+    "name": "metrakit/lazydebug",
+    "description": "A Laravel package for a lazy debug",
+    "authors": [
+        {
+            "name": "Jordane Jouffroy",
+            "email": "contact@jordane.net"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
