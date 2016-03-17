@@ -18,8 +18,8 @@ class ExceptionHandler extends Handler
     public function render($request, Exception $e)
     {
         $content = parent::render($request, $e);
-        $url_handler = "subl://open?url=";
-        $local_path = "/Users/jordanejouffroy/Projects/minetop";
+        $url_handler = "subl://";
+        $local_path = "C:/projects/inscription-numerique/metier";
         $js = "
             <script>
                 var reg = new RegExp('[ ]+', 'g');
@@ -35,7 +35,8 @@ class ExceptionHandler extends Handler
 
                         var file_path = parts[0].replace('" . base_path() . "', '" . $local_path . "');
                         var line = parts[2];
-                        var url_handler = '" . $url_handler ."' + file_path + '&line=' + line;
+                        var url_handler = '" . $url_handler ."' + file_path + ':' + line;
+                        console.log(url_handler);
                         
                         window.location.href = url_handler;
                         
