@@ -19,7 +19,7 @@ class ExceptionHandler extends Handler
     {
         $content = parent::render($request, $e);
         $url_handler = "subl://";
-        $local_path = "C:/projects/inscription-numerique/metier";
+        $local_path = env('PATH_FOLDER', base_path());
         $js = "
             <script>
                 var reg = new RegExp('[ ]+', 'g');
