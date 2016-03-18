@@ -19,4 +19,4 @@ Your favorite browser is Google Chrome ? Follow these steps :
 - Use the `composer require metrakit/laravel-lazy-debug` in your project folder
 - Add the `Metrakit\LazyDebug\LazyDebugServiceProvider::class` Service provider in the ServiceProvider section in your `config/app.php` file
 - (optional) Set a env variable in your .env file for the local path project (usefull is you use Vagrant or Docker) (e.g. `PATH_FOLDER=C:/projects/my-project`)
-- It's work !
+- Voilà, now you can click on the error like on the GIF for open the file in Sublime Text
