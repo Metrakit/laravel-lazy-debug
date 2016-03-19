@@ -11,8 +11,7 @@
 Your favorite browser is Google Chrome ? Follow these steps :
 
 1. Close Chrome
-2. (Windows) Open this file : `C:\Users\XXXX\AppData\Local\Google\Chrome\User Data` and search for `excluded_schemes` in `protocol_handler`
-2. (OSX) Open this file : `~/Library/Application Support/Google/Chrome/Local State` and search for `excluded_schemes` in `protocol_handler`
+2. (Windows) Open this file : `C:\Users\XXXX\AppData\Local\Google\Chrome\User Data` and search for `excluded_schemes` in `protocol_handler`. (OSX) Open this file : `~/Library/Application Support/Google/Chrome/Local State` and search for `excluded_schemes` in `protocol_handler`
 3. Add `"subl": false,` and save the file
 4. Open Chrome and it's work !
 
