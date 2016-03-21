@@ -29,7 +29,7 @@ class ExceptionHandler extends Handler
         $js = "
             <script>
                 var reg = new RegExp('[ ]+', 'g');
-                [].forEach.call(document.querySelectorAll('li a'), function(el) {
+                [].forEach.call(document.querySelectorAll('a'), function(el) {
                     el.addEventListener('click', function() {
                         if (el.title.indexOf('" . base_path() . "') > -1) {
                             parts = el.title.split(reg);
