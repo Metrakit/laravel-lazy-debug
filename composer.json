@@ -1,7 +1,7 @@
 {
     "name": "metrakit/laravel-lazy-debug",
     "description": "A Laravel package for a lazy debug",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "keywords": ["laravel", "debug", "lazy", "debugger"],
     "homepage": "https://github.com/Metrakit/laravel-lazy-debug",
     "license": "MIT",
