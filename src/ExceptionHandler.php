@@ -17,6 +17,10 @@ class ExceptionHandler extends Handler
      */
     public function render($request, Exception $e)
     {
+        if ($request->ajax()) {
+            return parent::render($request, $e);
+        }
+
         $user_agent = getenv("HTTP_USER_AGENT");
         $content = parent::render($request, $e);
         $url_handler = "subl://";
@@ -43,9 +47,9 @@ class ExceptionHandler extends Handler
                         var line = parts[2];
                         var url_handler = '" . $url_handler ."' + file_path + '" . $line_separator ."' + line;
                         console.log(url_handler);
-                        
+
                         window.location.href = url_handler;
-                        
+
                     }, false);
                 });
             </script>
