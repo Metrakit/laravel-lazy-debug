@@ -17,12 +17,12 @@ class ExceptionHandler extends Handler
      */
     public function render($request, Exception $e)
     {
-        if ($request->ajax()) {
-            return parent::render($request, $e);
+        $content = parent::render($request, $e);
+        if ($request->ajax() || ! isset($content->original)) {
+            return $content;
         }
 
         $user_agent = getenv("HTTP_USER_AGENT");
-        $content = parent::render($request, $e);
         $url_handler = "subl://";
         $line_separator = ':';
         if (strpos($user_agent, "Mac") !== FALSE) {
